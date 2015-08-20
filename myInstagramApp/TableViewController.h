@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface TableViewController : UITableViewController
+
+@property NSArray *arr1;
+@property NSArray *arr2;
 
 @end

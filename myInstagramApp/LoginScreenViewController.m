@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     _userIDOutlet.delegate = self;
     _userPwOutlet.delegate = self;
     
@@ -74,9 +74,10 @@
         if([userPw isEqualToString:@"123"]){
             NSLog(@"Correct PW");
             UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            HomePageViewController *homePage = (HomePageViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"HomePageView"];
+            UINavigationController *navController = (UINavigationController *)[storyBoard instantiateViewControllerWithIdentifier:@"navigationController"];
+            HomePageViewController *homePage = (HomePageViewController *)[navController viewControllers].firstObject;
             [homePage setUserIDText:[NSString stringWithFormat:@"Welcome! , %@", _userIDOutlet.text]];
-            [self presentViewController:homePage animated:YES completion:nil];
+            [self presentViewController:navController animated:YES completion:nil];
             [_userIDOutlet setText:@""];
             [_userPwOutlet setText:@""];
         }else if([userPw isEqualToString:@""]) {
@@ -103,6 +104,5 @@
         [alert4 show];
         [_userIDOutlet setText:@""];
     }
-
 }
 @end

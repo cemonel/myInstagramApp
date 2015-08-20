@@ -7,8 +7,10 @@
 //
 
 #import "TableViewController.h"
+#import "TableViewCell.h"
 
 @interface TableViewController ()
+
 
 @end
 
@@ -16,42 +18,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _arr1 = @[@"Heisenberg",@"Walter J."];
+    _arr2 = @[@"url-1.png",@"jesse-pinkman.png"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.title = @"People";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return [_arr1 count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.label1.text = [_arr1 objectAtIndex:indexPath.row];
+    cell.imageViewCell.image = [UIImage imageNamed:[_arr2 objectAtIndex:indexPath.row]];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

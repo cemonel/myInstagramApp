@@ -19,6 +19,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_welcomeLabel setText:_userIDText];
+    
+    self.navigationItem.title = @"Home Page";
+    
+    UIBarButtonItem *logOutBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Log out" style:UIBarButtonItemStyleDone target:self action:@selector(logOutBarButton:)];
+    
+    self.navigationItem.rightBarButtonItem = logOutBarButton;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +44,7 @@
 }
 */
 
-- (IBAction)logOutButton:(id)sender {
+- (void)logOutBarButton:(UIBarButtonItem *)button {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

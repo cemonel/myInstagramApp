@@ -14,6 +14,7 @@
 @property(nonatomic, strong) NSString *userIDText;
 @property (strong, nonatomic) IBOutlet UILabel *welcomeLabel;
 
-- (IBAction)logOutButton:(id)sender;
+
+- (void)logOutBarButton:(UIBarButtonItem *)button;
 
 @end

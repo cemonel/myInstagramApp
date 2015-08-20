@@ -10,7 +10,10 @@
 		AF6145A71B8481B000CCCA19 /* LoginMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6145A61B8481B000CCCA19 /* LoginMethodViewController.m */; };
 		AF6145AB1B84829F00CCCA19 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6145AA1B84829F00CCCA19 /* LoginScreenViewController.m */; };
 		AF6145AE1B84904C00CCCA19 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6145AD1B84904C00CCCA19 /* HomePageViewController.m */; };
-		AF6145B11B84979200CCCA19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6145AF1B84979200CCCA19 /* Main.storyboard */; };
+		AFAA509D1B860707004660EF /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAA509C1B860707004660EF /* TableViewCell.m */; };
+		AFAA509F1B860939004660EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAA509E1B860939004660EF /* Main.storyboard */; };
+		AFAA50A81B860F16004660EF /* url-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFAA50A41B860F16004660EF /* url-1.png */; };
+		AFAA50AC1B861C41004660EF /* jesse-pinkman.png in Resources */ = {isa = PBXBuildFile; fileRef = AFAA50AB1B861C41004660EF /* jesse-pinkman.png */; };
 		AFD3817A1B84C069008F1509 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD381791B84C069008F1509 /* TableViewController.m */; };
 		AFDFE2111B8396AA009A5AE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDFE2101B8396AA009A5AE2 /* main.m */; };
 		AFDFE2141B8396AA009A5AE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDFE2131B8396AA009A5AE2 /* AppDelegate.m */; };
@@ -36,7 +39,11 @@
 		AF6145AA1B84829F00CCCA19 /* LoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
 		AF6145AC1B84904C00CCCA19 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		AF6145AD1B84904C00CCCA19 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		AF6145B01B84979200CCCA19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFAA509B1B860707004660EF /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		AFAA509C1B860707004660EF /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		AFAA509E1B860939004660EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		AFAA50A41B860F16004660EF /* url-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "url-1.png"; sourceTree = "<group>"; };
+		AFAA50AB1B861C41004660EF /* jesse-pinkman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jesse-pinkman.png"; sourceTree = "<group>"; };
 		AFD381781B84C069008F1509 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		AFD381791B84C069008F1509 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		AFDFE20B1B8396AA009A5AE2 /* myInstagramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myInstagramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,8 +87,19 @@
 				AF6145AD1B84904C00CCCA19 /* HomePageViewController.m */,
 				AFD381781B84C069008F1509 /* TableViewController.h */,
 				AFD381791B84C069008F1509 /* TableViewController.m */,
+				AFAA509B1B860707004660EF /* TableViewCell.h */,
+				AFAA509C1B860707004660EF /* TableViewCell.m */,
 			);
 			name = Modal;
+			sourceTree = "<group>";
+		};
+		AFAA50A01B860F16004660EF /* Breaking Bad */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA50AB1B861C41004660EF /* jesse-pinkman.png */,
+				AFAA50A41B860F16004660EF /* url-1.png */,
+			);
+			path = "Breaking Bad";
 			sourceTree = "<group>";
 		};
 		AFDFE2021B8396A9009A5AE2 = {
@@ -105,9 +123,10 @@
 		AFDFE20D1B8396AA009A5AE2 /* myInstagramApp */ = {
 			isa = PBXGroup;
 			children = (
-				AF6145AF1B84979200CCCA19 /* Main.storyboard */,
+				AFAA509E1B860939004660EF /* Main.storyboard */,
 				AF6145A81B8481D600CCCA19 /* Modal */,
 				AFDFE20E1B8396AA009A5AE2 /* Supporting Files */,
+				AFAA50A01B860F16004660EF /* Breaking Bad */,
 			);
 			path = myInstagramApp;
 			sourceTree = "<group>";
@@ -222,8 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6145B11B84979200CCCA19 /* Main.storyboard in Resources */,
+				AFAA509F1B860939004660EF /* Main.storyboard in Resources */,
 				AFDFE21F1B8396AA009A5AE2 /* LaunchScreen.xib in Resources */,
+				AFAA50AC1B861C41004660EF /* jesse-pinkman.png in Resources */,
+				AFAA50A81B860F16004660EF /* url-1.png in Resources */,
 				AFDFE21C1B8396AA009A5AE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAA509D1B860707004660EF /* TableViewCell.m in Sources */,
 				AF6145A71B8481B000CCCA19 /* LoginMethodViewController.m in Sources */,
 				AFD3817A1B84C069008F1509 /* TableViewController.m in Sources */,
 				AFDFE2141B8396AA009A5AE2 /* AppDelegate.m in Sources */,
@@ -270,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF6145AF1B84979200CCCA19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF6145B01B84979200CCCA19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AFDFE21D1B8396AA009A5AE2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
